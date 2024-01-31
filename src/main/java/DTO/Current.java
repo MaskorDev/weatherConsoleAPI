@@ -1,58 +1,34 @@
 package DTO;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Current {
     private long last_updated_epoch;
     private String last_updated;
     private double temp_c;
     private double temp_f;
-    private boolean is_day;
+    private int is_day;
     private Condition condition;
 
-    public long getLast_updated_epoch() {
-        return last_updated_epoch;
-    }
+    private double wind_mph;
+    private double wind_kph;
+    private int wind_degree;
+    private String wind_dir;
+    private int pressure_mb;
+    private double pressure_in;
+    private Double precip_mm;
+    private Double precip_in;
+    private int humidity;
+    private int cloud;
+    private double feelslike_c;
+    private double feelslike_f;
+    private Double vis_km;
+    private Double vis_miles;
+    private int uv;
+    private double gust_mph;
+    private double gust_kph;
 
-    public void setLast_updated_epoch(long last_updated_epoch) {
-        this.last_updated_epoch = last_updated_epoch;
-    }
-
-    public String getLast_updated() {
-        return last_updated;
-    }
-
-    public void setLast_updated(String last_updated) {
-        this.last_updated = last_updated;
-    }
-
-    public double getTemp_c() {
-        return temp_c;
-    }
-
-    public void setTemp_c(double temp_c) {
-        this.temp_c = temp_c;
-    }
-
-    public double getTemp_f() {
-        return temp_f;
-    }
-
-    public void setTemp_f(double temp_f) {
-        this.temp_f = temp_f;
-    }
-
-    public boolean isIs_day() {
-        return is_day;
-    }
-
-    public void setIs_day(boolean is_day) {
-        this.is_day = is_day;
-    }
-
-    public Condition getCondition() {
-        return condition;
-    }
-
-    public void setCondition(Condition condition) {
-        this.condition = condition;
-    }
 }
